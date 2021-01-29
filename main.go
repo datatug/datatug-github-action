@@ -15,12 +15,9 @@ func main() {
 		githubCommit     = os.Getenv("GITHUB_SHA")
 	)
 
-	if inputProjects == "" {
-		log.Fatal("DATATUG_PROJECTS input is required")
-	}
-
 	log.Println("Workflow: ", githubWorkflow)
 	log.Println("Repository: ", githubRepository)
 	log.Println("Commit: ", githubCommit)
 	log.Println("DATATUG_PROJECTS: ", inputProjects)
+	log.Println("datatug_projects: ", os.Getenv("datatug_projects"))
 }
