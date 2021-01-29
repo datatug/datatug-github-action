@@ -1,0 +1,14 @@
+name: 'DataTug action'
+description: 'Validates DataTug projects'
+author: 'datatug'
+inputs:
+  datatug_projects:
+    description: 'List of DataTug project folders separate by commas'
+    required: true
+    default: 'datatug'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'database'
+  color: 'blue'
